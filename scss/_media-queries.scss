@@ -1,0 +1,27 @@
+/* Téléphone portrait */
+@mixin xs {
+	@media (max-width: 480px) {
+		@content;
+	}
+}
+
+/* Téléphone paysage + Tablette portrait */
+@mixin sm {
+	@media (max-width: 767px) {
+		@content;
+	}
+}
+
+/* Tablette Paysage + PC portable, petit ecran*/
+@mixin md {
+	@media (min-width: 768px) and (max-width: 979px) {
+		@content;
+	}
+}
+
+/* PC large */
+@mixin xl {
+	@media (max-width: 1200px) {
+		@content;
+	}
+}
